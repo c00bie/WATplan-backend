@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "sourceRoot": "./src",
+    "outDir": "./dist",
+    "removeComments": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ES2021", "DOM"],
+  }
+}

@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model settings {
+  id       String   @id @db.VarChar(12)
+  settings String   @db.LongText
+  notes    String   @db.LongText
+  updated  DateTime @default(now()) @db.Timestamp(0)
+}
+
+model starosci {
+  id  String @id @db.VarChar(12)
+  grp String @db.VarChar(10)
+}
